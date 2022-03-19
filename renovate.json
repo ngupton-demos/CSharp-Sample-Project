@@ -1,0 +1,32 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base",
+        ":rebaseStalePrs",
+        ":prImmediately",
+        ":prHourlyLimitNone",
+        ":prConcurrentLimitNone",
+        ":automergeDisabled",
+        ":disableDependencyDashboard"
+    ],
+    "baseBranches": [
+        "main"
+    ],
+    "enabledManagers": [
+        "nuget"
+    ],
+    "seperateMajorMinor": false
+
+    // Uncomment to enable using an internal nuget repo instead of nuget.org
+    // "hostRules": [
+    //     {
+    //         "matchHost": "nuget.org",
+    //         "enabled": false
+    //     }
+    // ],
+    // "nuget": {
+    //     "registryUrls": [
+    //         "https://artifactory.example.com/artifactory/api/nuget/v3/nuget#protocolVersion=3"
+    //     ]
+    // }
+}
