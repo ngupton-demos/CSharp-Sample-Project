@@ -6,8 +6,7 @@
         ":prImmediately",
         ":prHourlyLimitNone",
         ":prConcurrentLimitNone",
-        ":automergeDisabled",
-        ":disableDependencyDashboard"
+        ":automergeDisabled"
     ],
     "baseBranches": [
         "main"
@@ -16,17 +15,4 @@
         "nuget"
     ],
     "seperateMajorMinor": false
-
-    // Uncomment to enable using an internal nuget repo instead of nuget.org
-    // "hostRules": [
-    //     {
-    //         "matchHost": "nuget.org",
-    //         "enabled": false
-    //     }
-    // ],
-    // "nuget": {
-    //     "registryUrls": [
-    //         "https://artifactory.example.com/artifactory/api/nuget/v3/nuget#protocolVersion=3"
-    //     ]
-    // }
 }
