@@ -24,7 +24,7 @@
         "composer",
         "cargo"
     ],
-    "seperateMajorMinor": false,
+    "separateMajorMinor": false,
     // If you have an internal nuget repo, use the following settings to disable nuget.org.
     // Similar config settings are available for all supported package managers.
     "hostRules": [
