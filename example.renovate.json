@@ -1,0 +1,41 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    // There are default configurations, you can use these to reduce length of your config file.
+    // See for full list: https://docs.renovatebot.com/presets-default/
+    "extends": [
+        "config:base",
+        ":rebaseStalePrs",
+        ":prImmediately",
+        ":prHourlyLimitNone",
+        ":prConcurrentLimitNone",
+        ":automergeDisabled",
+    ],
+    // Specify the branches you want to check
+    "baseBranches": [
+        "main",
+        "develop"
+    ],
+    // Supports many different package managers, below are some common ones, 
+    // see the docs for full list: https://docs.renovatebot.com/modules/manager
+    "enabledManagers": [
+        "nuget",
+        "npm",
+        "maven",
+        "composer",
+        "cargo"
+    ],
+    "seperateMajorMinor": false,
+    // If you have an internal nuget repo, use the following settings to disable nuget.org.
+    // Similar config settings are available for all supported package managers.
+    "hostRules": [
+        {
+            "matchHost": "nuget.org",
+            "enabled": false
+        }
+    ],
+    "nuget": {
+        "registryUrls": [
+            "https://artifactory.example.com/artifactory/api/nuget/v3/nuget#protocolVersion=3"
+        ]
+    }
+}
