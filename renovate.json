@@ -14,5 +14,5 @@
     "enabledManagers": [
         "nuget"
     ],
-    "seperateMajorMinor": false
+    "separateMajorMinor": false
 }
