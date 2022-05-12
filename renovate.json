@@ -6,13 +6,14 @@
         ":prImmediately",
         ":prHourlyLimitNone",
         ":prConcurrentLimitNone",
-        ":automergeDisabled"
+        ":automergeDisabled",
+        ":enableVulnerabilityAlertsWithLabel(vulnerability)",
+        ":separateMultipleMajorReleases"
     ],
     "baseBranches": [
         "main"
     ],
     "enabledManagers": [
         "nuget"
-    ],
-    "separateMajorMinor": false
+    ]
 }
