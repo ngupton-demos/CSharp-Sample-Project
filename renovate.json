@@ -6,7 +6,7 @@
         ":prHourlyLimitNone",
         ":prConcurrentLimitNone",
         ":automergeDisabled",
-        ":enableVulnerabilityAlertsWithLabel(vulnerability)",
+        ":enableVulnerabilityAlertsWithLabel(security)",
         ":separateMultipleMajorReleases"
     ],
     "baseBranches": [
